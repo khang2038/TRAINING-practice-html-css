@@ -1,3 +1,56 @@
-<footer>
-   <h4>footer</h4>
+<footer class="footer-container">
+  <div class="footer-content">
+    <div class="links">
+      <include
+        src="./components/link-block.html"
+        locals='{
+          "nameTitle":"COMPANY",
+          "listLink":"[`News`,`Blog`,`Tetimonials`,`About Us`,`Press Kit`,`Get in Touch`]"
+        }'
+      >
+      </include>
+      <include
+        src="./components/link-block.html"
+        locals='{
+          "nameTitle":"PRODUCTS",
+          "listLink":"[`UI Kits`,`Icons`,`Wordpress Themes`,`Mock-Ups`]"
+        }'
+      >
+      </include>
+      <include
+        src="./components/link-block.html"
+        locals='{
+          "nameTitle":"SUPPORT",
+          "listLink":"[`Community`,`Forum`,`Distributors`,`Privacy Policy`,`Terms of Use`]"
+        }'
+      >
+      </include>
+      <include
+        src="./components/link-block.html"
+        locals='{
+          "nameTitle":"CUSTOMERS",
+          "listLink":"[`Documentation`,`Tools`,`Downloads`,`Developer Center`]"
+        }'
+      >
+      </include>
+    </div>
+    <hr class="footer-hr" />
+    <div class="information">
+      <div class="copyright">
+        <p>&copy; 2016 Hofmann UI Kit</p>
+        <p>Created by Goldenfox - okodesign.net</p>
+      </div>
+      <ul class="social">
+        <include
+          src="./components/list-social.html"
+          locals='{
+              "classList":"list-social",
+              "classIcon":"social__icon",
+              "list":"[`../assets/icons/linkedin-icon.svg`,`../assets/icons/google-plus-icon.svg`,`../assets/icons/twitter-icon.svg`,`../assets/icons/facebook-icon.svg`,`../assets/icons/instagram-icon.svg`]"
+            }'
+        >
+        </include>
+      </ul>
+    </div>
+  </div>
 </footer>

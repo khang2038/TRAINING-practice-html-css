@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+.navbar {
+  width: 100%;
+  @include flex($align: center, $justify: space-around);
+
+  &__logo {
+    margin-top: 27px;
+    color: #ebcb80;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .navbar-right {
+    @include flex($align: center, $justify: space-between);
+    margin-top: 27px;
+
+    &__categories {
+      @include flex($align: center, $justify: space-around);
+      margin-right: 57px;
+      li {
+        margin-right: 39px;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.0555556em;
+        color: #ffffff;
+      }
+    }
+
+    &__action {
+      @include flex($align: center, $justify: space-around);
+      &--search {
+        margin-right: 30.75;
+        width: 15px;
+        height: 22px;
+      }
+
+      &--language {
+        text-align: center;
+        width: 69px;
+        height: 36px;
+        background-color: transparent;
+        font-size: 18px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 50px;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+    }
+  }
+}

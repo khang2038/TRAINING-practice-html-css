@@ -1,0 +1,12 @@
+<section class="list-link">
+  <p class="list-link__header">{{nameTitle}}</p>
+  <hr class="list-link__hr">
+  <include
+        src="./components/nav-list.html"
+        locals='{
+            "classList":"footer-list-link",
+            "classLink":"footer-link",
+            "list":"{{listLink}}"
+          }'
+    >
+</section>

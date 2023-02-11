@@ -1,0 +1,48 @@
+.section1-container {
+  display: flex;
+  .section1-container-left {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    position: absolute;
+    left: 240px;
+    top: 139px;
+    &-header {
+      margin-bottom: 151px;
+      font-size: 18px;
+    }
+
+    &-main__title {
+      margin-bottom: 30px;
+      margin-left: 23px;
+      font-size: 64px;
+      color: #ebcb80;
+    }
+
+    &-main__description-lager {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &-main__description {
+      margin-bottom: 99px;
+      font-size: 16px;
+    }
+
+    .app-store {
+      display: flex;
+      &__google {
+        margin-left: 30px;
+      }
+    }
+  }
+  .section1-container-right {
+    margin-left: 50px;
+    width: 358px;
+    position: absolute;
+    right: 242px;
+    top: 217px;
+  }
+}

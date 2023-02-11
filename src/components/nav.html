@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <div class="navbar__logo">H.</div>
+  <div class="navbar-right">
+    <ul class="navbar-right__categories">
+      <include
+        src="./components/nav-list.html"
+        locals='{
+            "classList":"nav-list-item",
+            "classLink":"nav-link",
+            "list":"[`Prices`,`Booking`,`Blog`,`Services`]"
+          }'
+      >
+      </include>
+    </ul>
+    <ul class="navbar-right__action">
+      <figure class="navbar-right__action--search">
+        <img src="../assets/icons/search icon.svg" alt="search" />
+      </figure>
+      <select class="navbar-right__action--language">
+        <option value="US">
+          US
+          <figure class="navbar-right__action--search">
+            <img src="../assets/icons/dropdown-icon.svg" alt="search" />
+          </figure>
+        </option>
+        <option value="VN">
+          VN
+          <figure class="navbar-right__action--search">
+            <img src="../assets/icons/dropdown-icon.svg" alt="search" />
+          </figure>
+        </option>
+      </select>
+    </ul>
+  </div>
+</nav>

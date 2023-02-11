@@ -1,0 +1,27 @@
+.list-link {
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+
+  &__header {
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+  &__hr {
+    border-top: 1px solid #7d7d7d;
+    width: 262px;
+    margin-top: 19px;
+  }
+
+  .footer-list-link {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    list-style: none;
+    margin-left: 10px;
+  }
+}

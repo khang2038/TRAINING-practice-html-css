@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+.header-container {
+  background: url("../assets/images/background-header.png") no-repeat center
+    center / cover;
+  position: relative;
+  height: 768px;
+}
