@@ -1,0 +1,55 @@
+.section5 {
+  background: #ebcb80;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-container {
+    text-align: center;
+    width: 511px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .section5-header {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      &__title {
+        font-size: 44px;
+        line-height: 48px;
+        letter-spacing: -0.0363636em;
+        margin-bottom: 23px;
+      }
+      &__subtitle {
+        width: 286px;
+      }
+    }
+    .section5-main {
+      &__input-email {
+        width: 230px;
+        height: 45px;
+        padding: 13px 115px 14px 25px;
+        background: #ffffff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        color: #4b4b4b;
+      }
+    }
+    .section5-button {
+      width: 230px;
+      height: 48px;
+      color: #ffffff;
+      background: #4b4b4b;
+      border-radius: 50px;
+      padding: 15px 57px 14px 58px;
+      border: none;
+    }
+    align-items: center;
+  }
+}

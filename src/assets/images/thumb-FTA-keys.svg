@@ -1,19 +1,7 @@
-<svg width="294" height="294" viewBox="0 0 294 294" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g filter="url(#filter0_d_0_475)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M147 270C219.349 270 278 211.349 278 139C278 66.6507 219.349 8 147 8C74.6507 8 16 66.6507 16 139C16 211.349 74.6507 270 147 270Z" fill="url(#pattern0)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M147 270C219.349 270 278 211.349 278 139C278 66.6507 219.349 8 147 8C74.6507 8 16 66.6507 16 139C16 211.349 74.6507 270 147 270Z" fill="#D1B471" style="mix-blend-mode:multiply"/>
-<path d="M276 139C276 210.245 218.245 268 147 268C75.7553 268 18 210.245 18 139C18 67.7553 75.7553 10 147 10C218.245 10 276 67.7553 276 139Z" stroke="#EBCB80" stroke-width="4"/>
-</g>
+<svg width="262" height="262" viewBox="0 0 262 262" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M131 262C203.349 262 262 203.349 262 131C262 58.6507 203.349 0 131 0C58.6507 0 0 58.6507 0 131C0 203.349 58.6507 262 131 262Z" fill="url(#pattern0)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M131 262C203.349 262 262 203.349 262 131C262 58.6507 203.349 0 131 0C58.6507 0 0 58.6507 0 131C0 203.349 58.6507 262 131 262Z" fill="#D1B471" style="mix-blend-mode:multiply"/>
 <defs>
-<filter id="filter0_d_0_475" x="0" y="0" width="294" height="294" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="8"/>
-<feGaussianBlur stdDeviation="8"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.188208 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_475"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_475" result="shape"/>
-</filter>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_0_475" transform="scale(0.00381679)"/>
 </pattern>
