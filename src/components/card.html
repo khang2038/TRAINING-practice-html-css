@@ -1,0 +1,18 @@
+<section class="card-section">
+  <header class="card-section-header">
+    <img src="{{image}}" alt="" />
+    <div class="card-section-header-pricing">
+      <p class="card-section-header-pricing__name">{{name}}</p>
+      <div class="price">
+        <p class="dolar">$</p>
+        <p class="value">{{price}}</p>
+      </div>
+    </div>
+  </header>
+  <main class="card-section-main">
+    <each loop="item in {{ list }} ">
+      <p>{{item}}</p>
+    </each>
+  </main>
+  <button class="card-section__button">GET STARTED</button>
+</section>

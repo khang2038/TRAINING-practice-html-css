@@ -1,0 +1,62 @@
+.card-section {
+  max-width: 262px;
+  height: 372px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  text-align: center;
+  &-header {
+    position: relative;
+    &-pricing {
+      position: absolute;
+      top: 40px;
+      left: 75px;
+      color: #ffffff;
+      &__name {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.0555556em;
+      }
+      .price {
+        display: flex;
+        justify-content: center;
+        .dolar {
+          font-size: 24px;
+          line-height: 75px;
+          letter-spacing: 0.0416667em;
+        }
+        .value {
+          font-size: 64px;
+          line-height: 75px;
+        }
+      }
+    }
+  }
+
+  .card-section-main {
+    text-align: center;
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 26px;
+    height: 56px;
+  }
+
+  &__button {
+    margin-top: 56px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.0625em;
+    width: 200px;
+    height: 48px;
+    background-color: #f6f6f6;
+    border: none;
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    .card-section__button {
+      background: #ebcb80;
+      border-radius: 50px;
+    }
+  }
+}

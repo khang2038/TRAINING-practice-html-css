@@ -1,0 +1,22 @@
+.section6-container{
+  height: 802px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .section6__title{
+    text-align: center;
+    font-size: 44px;
+    line-height: 48px;
+  }
+  .section6-dotnav{
+    display: flex;
+    li{
+      margin-right: 16px;
+    }
+  }
+  .section6-main{
+    display: flex;
+    align-items: flex-end;
+  }
+}
