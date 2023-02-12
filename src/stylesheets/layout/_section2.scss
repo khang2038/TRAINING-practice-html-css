@@ -1,0 +1,23 @@
+.section2-container {
+  height: 682px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .section2-header {
+    color: #4b4b4b;
+    &__tittle {
+      text-align: center;
+      font-size: 44px;
+      line-height: 48px;
+      margin-bottom: 22px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .section2-main{
+    display: flex;
+  }
+}

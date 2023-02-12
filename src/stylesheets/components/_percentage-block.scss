@@ -1,0 +1,39 @@
+.percentage-block-container{
+  width:262px;
+  margin-bottom: 44px;
+  margin-left: 50px;
+  margin-right: 50px;
+  .percentage{
+     position: relative;
+     margin-bottom: 25px;
+     text-align: center;
+     .value{
+        position: absolute;
+        left: 74px;
+        top: 74px;
+        color: #4B4B4B;
+        &__int{
+          font-size: 64px;
+          line-height: 42px;
+          letter-spacing: -0.025em;
+        }
+        &__decimal{
+          font-size: 30px;
+          line-height: 42px;
+          letter-spacing: -0.025em;
+        }
+     }
+  }
+  .description{
+    text-align: center;
+    &__title{
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 5px;
+    }
+    &__content{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
