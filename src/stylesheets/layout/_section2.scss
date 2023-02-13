@@ -1,9 +1,17 @@
+@use "../abstracts" as *;
+
 .section2-container {
   height: 682px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  @include tablet {
+    height: 363px;
+  }
+  @include mobile {
+    height: 823px;
+  }
   .section2-header {
     color: #4b4b4b;
     &__tittle {
@@ -11,13 +19,24 @@
       font-size: 44px;
       line-height: 48px;
       margin-bottom: 22px;
+      @include tablet {
+        font-size: 32px;
+        margin-bottom: 0px;
+      }
     }
     &__description {
       font-size: 16px;
       line-height: 24px;
+      @include tablet {
+        font-size: 11px;
+        line-height: 16px;
+      }
     }
   }
-  .section2-main{
+  .section2-main {
     display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
   }
 }

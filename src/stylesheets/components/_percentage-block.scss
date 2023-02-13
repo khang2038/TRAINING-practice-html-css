@@ -1,26 +1,60 @@
+@use "../abstracts" as *;
 .percentage-block-container {
   width: 262px;
-  margin-bottom: 44px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0px 40px 80px 40px;
+  @include tablet-lager {
+    width: 200px;
+  }
+  @include tablet {
+    width: 139.73px;
+    margin-bottom: 30px;
+  }
   .percentage {
     position: relative;
     margin-bottom: 25px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      .percentage-figure {
+        width: 101.11px;
+        height: 101.2px;
+        &__img {
+          width: 101.11px;
+          height: 101.2px;
+        }
+      }
+      margin-bottom: 15.52px;
+    }
     .value {
       position: absolute;
       left: 74px;
       top: 74px;
       color: #4b4b4b;
+      @include tablet-lager {
+        left: 50px;
+      }
+      @include tablet {
+        left: 30%;
+        top: 40%;
+      }
       &__int {
         font-size: 64px;
         line-height: 42px;
         letter-spacing: -0.025em;
+        @include tablet {
+          font-size: 32px;
+          line-height: 22px;
+        }
       }
       &__decimal {
         font-size: 30px;
         line-height: 42px;
         letter-spacing: -0.025em;
+        @include tablet {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
   }
@@ -30,10 +64,18 @@
       font-size: 18px;
       line-height: 30px;
       margin-bottom: 5px;
+      @include tablet {
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
     &__content {
       font-size: 16px;
       line-height: 24px;
+      @include tablet {
+        font-size: 11px;
+        line-height: 16px;
+      }
     }
   }
 }

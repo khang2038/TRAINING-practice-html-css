@@ -1,8 +1,20 @@
+@use "../abstracts" as *;
 .section4-container {
   height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @include tablet-lager {
+    height: 600px;
+  }
+
+  @include tablet {
+    height: 520px;
+  }
+
+  @include mobile {
+    height: 1304px;
+  }
   .section4-header {
     margin-top: 19px;
     text-align: center;
@@ -13,15 +25,45 @@
       font-size: 44px;
       line-height: 48px;
       letter-spacing: -0.0363636em;
+      @include tablet-lager {
+        font-size: 38px;
+      }
+      @include tablet {
+        font-size: 32px;
+      }
+
+      @include mobile {
+        font-size: 20px;
+      }
     }
     &__subtitle {
       margin-top: 23px;
       width: 555px;
+      font-size: 16px;
+      line-height: 24px;
+      @include tablet-lager {
+        font-size: 13px;
+      }
+      @include tablet {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 11px;
+      }
+      @include mobile {
+        width: 240;
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 7px;
+      }
     }
   }
   .section4-main {
     display: flex;
     justify-content: space-around;
     margin: 0px 50px;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

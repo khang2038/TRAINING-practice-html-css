@@ -5,4 +5,15 @@
     center / cover;
   position: relative;
   height: 768px;
+
+  @include tablet-lager {
+    height: 650px;
+  }
+
+  @include tablet {
+    .navbar {
+      display: none;
+    }
+    height: 410px;
+  }
 }
