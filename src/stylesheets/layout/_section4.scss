@@ -1,4 +1,4 @@
-.section4-container{
+.section4-container {
   height: 820px;
   display: flex;
   flex-direction: column;
@@ -9,19 +9,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__title{
+    &__title {
       font-size: 44px;
       line-height: 48px;
       letter-spacing: -0.0363636em;
     }
-    &__subtitle{
+    &__subtitle {
       margin-top: 23px;
       width: 555px;
     }
   }
-  .section4-main{
+  .section4-main {
     display: flex;
     justify-content: space-around;
-    margin:  0px 50px;
+    margin: 0px 50px;
   }
 }

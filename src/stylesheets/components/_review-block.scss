@@ -5,36 +5,35 @@
   .review-block-header {
     margin-bottom: 25px;
     position: relative;
-    &__figure{
+    &__figure {
       width: 270px;
       height: 270px;
-      border: 4px solid #E6E6E6;
+      border: 4px solid #e6e6e6;
       border-radius: 50%;
     }
-    &-view{
+    &-view {
       position: absolute;
-      top:50%;
-      left:45%;
+      top: 50%;
+      left: 45%;
       display: none;
-      &-center{
+      &-center {
         width: 40px;
         height: 22px;
-        img{
+        img {
           width: 40px;
           height: 22px;
         }
       }
-      .review-block-header-quantity-view{
+      .review-block-header-quantity-view {
         margin-top: 70%;
         display: flex;
         font-size: 16px;
         line-height: 24px;
-        color: #FFFFFF;
-        &__view-icon{
+        color: #ffffff;
+        &__view-icon {
           margin-right: 5px;
         }
       }
-
     }
   }
   .review-block-main {
@@ -58,21 +57,21 @@
     justify-content: center;
     width: 200px;
     height: 48px;
-    border: 2px solid #4B4B4B;
+    border: 2px solid #4b4b4b;
     border-radius: 50px;
     margin-left: 35px;
     margin-top: 32px;
   }
-  &:hover{
+  &:hover {
     cursor: pointer;
-    .review-block-footer{
+    .review-block-footer {
       border: none;
-      background: #EBCB80;
+      background: #ebcb80;
     }
-    .review-block-header__figure{
-      border: 4px solid #EBCB80;;
+    .review-block-header__figure {
+      border: 4px solid #ebcb80;
     }
-    .review-block-header-view{
+    .review-block-header-view {
       display: block;
     }
   }

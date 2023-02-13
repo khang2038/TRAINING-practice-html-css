@@ -1,0 +1,98 @@
+.section8-container{
+  height: 683px;
+  background: url("../assets/images/background-contact.svg") no-repeat center
+  center / cover;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .section8__title{
+    text-align: center;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: -0.0363636em;
+  }
+  .section8-main{
+      width: 360px;
+      height: 396px;
+      background: #4B4B4B;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    .section8-form{
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(224.09deg, rgba(255, 255, 255, 0.5) 5.13%, rgba(255, 255, 255, 7e-05) 90.88%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 48px;
+      border-radius: 8px;
+      &__input {
+        width: 256px;
+        height: 36px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        border: 1px solid #999999;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        padding: 9px 151px 9px 15px;
+        margin-bottom: 25px;
+      }
+      &__input-message{
+        height: 94px;
+        padding: 8px 151px 50px 15px;
+      }
+
+      &-checkbox{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+      }
+
+      &__input-checkbox{
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        color: #FFFFFF;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .img-checkbox{
+        display: none;
+        margin: 3px 3px 3px 4px;
+      }
+
+      .section8-form__input-checkbox:checked + .img-checkbox{
+        display: block;
+      }
+
+      .section8-form__input-checkbox:checked{
+        display: none;
+      }
+
+      .section8-form-input__btn-submit{
+        width: 198px;
+        height: 48px;
+        background: #EBCB80;
+        border-radius: 50px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.0625em;
+        padding: 15px 41px 14px 42px;
+        border: none;
+        color: #4B4B4B;
+      }
+    }
+  }
+  .section8-footer{
+    display: flex;
+    &_child{
+      margin: 0 10px;
+    }
+  }
+}

@@ -1,44 +1,41 @@
-.testimonial-section{
+.testimonial-section {
   max-width: 550px;
   height: 348px;
   margin-left: 16px;
-  background: #4B4B4B;
+  background: #4b4b4b;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   padding: 33px 64px 87px 66px;
   position: relative;
-  color: #F6F6F6; 
-  &__comma{
+  color: #f6f6f6;
+  &__comma {
     text-align: center;
     font-size: 64px;
     line-height: 75px;
   }
 
-  &__quote{
+  &__quote {
     font-size: 18px;
     line-height: 24px;
   }
-  &__name{
+  &__name {
     font-size: 24px;
     line-height: 28px;
     margin-top: 44px;
   }
-  &__info{
+  &__info {
     font-size: 16px;
     line-height: 30px;
   }
-  &__image{
+  &__image {
     position: absolute;
-    top:284px;
+    top: 284px;
     right: 64px;
   }
 
   &.testimonial-section-active {
-    background: #EBCB80;
-    color: #4B4B4B;
+    background: #ebcb80;
+    color: #4b4b4b;
     margin-bottom: 48px;
   }
-
-
-  
 }
