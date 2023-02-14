@@ -2,7 +2,6 @@
 
 .footer-container {
   background-color: #4b4b4b;
-  height: 466px;
   display: flex;
   justify-content: center;
 
@@ -10,25 +9,90 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 1140px;
+    max-width: 1140px;
+    @include desktop {
+      max-width: 800px;
+    }
+    @include tablet-lager {
+      max-width: 750px;
+    }
+    @include tablet {
+      max-width: 500px;
+    }
+    @include mobile {
+      max-width: 290px;
+    }
   }
 
   .links {
     display: flex;
+    margin-bottom: 43px;
+    @include desktop {
+      margin-bottom: 38px;
+    }
+    @include tablet-lager {
+      margin-bottom: 35px;
+    }
+    @include tablet {
+      margin-bottom: 22px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+    }
   }
   .footer-hr {
     border-top: 1px solid #7d7d7d;
     width: 100%;
+    margin-bottom: 35px;
+    @include desktop {
+      margin-bottom: 30px;
+    }
+    @include tablet-lager {
+      margin-bottom: 28px;
+    }
+    @include tablet {
+      margin-bottom: 27.72px;
+    }
   }
   .information {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @include desktop {
+      margin-bottom: 37px;
+    }
+    @include tablet-lager {
+      margin-bottom: 33px;
+    }
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   .copyright {
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
+    @include desktop {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @include tablet-lager {
+      font-size: 13px;
+      line-height: 18px;
+    }
+    @include tablet {
+      font-size: 11px;
+      line-height: 13px;
+    }
+
+    @include mobile {
+      margin-top: 29px;
+    }
   }
 }

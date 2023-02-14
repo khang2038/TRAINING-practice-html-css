@@ -1,19 +1,61 @@
+@use "../abstracts" as *;
+
 .list-link {
   width: 1140px;
   display: flex;
   flex-direction: column;
   margin-top: 43px;
+  @include desktop {
+    max-width: 800px;
+  }
+  @include tablet-lager {
+    max-width: 750px;
+  }
+  @include tablet {
+    max-width: 500px;
+  }
+  @include mobile {
+    flex: 50%;
+  }
 
   &__header {
     font-size: 18px;
     line-height: 21px;
     color: #ffffff;
     margin-left: 10px;
+    @include desktop {
+      font-size: 16px;
+    }
+    @include tablet-lager {
+      font-size: 14px;
+    }
+    @include tablet {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    @include mobile {
+      line-height: 9px;
+      margin-left: 16px;
+    }
   }
   &__hr {
     border-top: 1px solid #7d7d7d;
     width: 262px;
     margin-top: 19px;
+    @include desktop {
+      width: 190px;
+    }
+
+    @include tablet-lager {
+      width: 170px;
+    }
+    @include tablet {
+      width: 100px;
+    }
+
+    @include mobile {
+      width: 115px;
+    }
   }
 
   .footer-list-link {
@@ -23,5 +65,21 @@
     color: #ffffff;
     list-style: none;
     margin-left: 10px;
+    @include desktop {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    @include tablet-lager {
+      font-size: 13px;
+      line-height: 21px;
+    }
+    @include tablet {
+      font-size: 11px;
+      line-height: 16px;
+    }
+    @include mobile {
+      line-height: 8px;
+      margin-left: 16px;
+    }
   }
 }

@@ -60,7 +60,7 @@
   .section4-main {
     display: flex;
     justify-content: space-around;
-    margin: 0px 50px;
+    margin-bottom: 50px;
     @include mobile {
       flex-direction: column;
       align-items: center;

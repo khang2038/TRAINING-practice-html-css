@@ -1,3 +1,4 @@
+@use "../abstracts" as *;
 .testimonial-section {
   max-width: 550px;
   height: 348px;
@@ -8,6 +9,21 @@
   padding: 33px 64px 87px 66px;
   position: relative;
   color: #f6f6f6;
+  @include tablet-lager {
+    max-width: 400px;
+    height: 308px;
+    margin-left: 13px;
+  }
+  @include tablet {
+    max-width: 316px;
+    height: 280px;
+  }
+  @include mobile {
+    width: 240px;
+    height: 280px;
+    padding: 28px 23px 61px 27px;
+    margin-left: 0px;
+  }
   &__comma {
     text-align: center;
     font-size: 64px;
@@ -17,25 +33,84 @@
   &__quote {
     font-size: 18px;
     line-height: 24px;
+    @include tablet-lager {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @include tablet {
+      font-size: 11px;
+      line-height: 16px;
+    }
+    @include mobile {
+      font-size: 11px;
+      line-height: 16px;
+    }
   }
   &__name {
     font-size: 24px;
     line-height: 28px;
     margin-top: 44px;
+    color: #ebcb80;
+    @include tablet-lager {
+      font-size: 21px;
+      line-height: 25px;
+      margin-top: 31px;
+    }
+    @include tablet {
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 27px;
+    }
   }
   &__info {
     font-size: 16px;
     line-height: 30px;
+    @include tablet-lager {
+      font-size: 14px;
+    }
+    @include tablet {
+      font-size: 12px;
+    }
   }
   &__image {
     position: absolute;
     top: 284px;
     right: 64px;
+    @include tablet-lager {
+      top: 250px;
+      right: 40px;
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    @include tablet {
+      top: 230px;
+      right: 20px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    @include mobile {
+      top: 250px;
+      right: 80px;
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
   }
 
   &.testimonial-section-active {
     background: #ebcb80;
     color: #4b4b4b;
     margin-bottom: 48px;
+    @include tablet {
+      margin-bottom: 0px;
+    }
+    @include mobile {
+      display: none;
+    }
   }
 }

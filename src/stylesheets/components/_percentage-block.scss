@@ -1,7 +1,6 @@
 @use "../abstracts" as *;
 .percentage-block-container {
   width: 262px;
-  margin: 0px 40px 80px 40px;
   @include tablet-lager {
     width: 200px;
   }

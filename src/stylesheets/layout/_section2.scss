@@ -1,17 +1,10 @@
 @use "../abstracts" as *;
 
 .section2-container {
-  height: 682px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  @include tablet {
-    height: 363px;
-  }
-  @include mobile {
-    height: 823px;
-  }
   .section2-header {
     color: #4b4b4b;
     &__tittle {
@@ -19,6 +12,7 @@
       font-size: 44px;
       line-height: 48px;
       margin-bottom: 22px;
+      margin-top: 69px;
       @include tablet {
         font-size: 32px;
         margin-bottom: 0px;
@@ -34,9 +28,12 @@
     }
   }
   .section2-main {
+    margin-top: 43px;
     display: flex;
     @include mobile {
       flex-direction: column;
     }
+    gap: 20px;
+    margin-bottom: 111px;
   }
 }
