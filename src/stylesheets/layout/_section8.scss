@@ -2,7 +2,7 @@
 .section8-container {
   background: url("../assets/images/background-contact.svg") no-repeat center
     center / cover;
-  color: #ffffff;
+  color: $background-color;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,7 +20,7 @@
   .section8-main {
     width: 360px;
     height: 396px;
-    background: #4b4b4b;
+    background: $text-sub-color;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
     margin-top: 52px;
     @include tablet {
@@ -44,7 +44,7 @@
       &__input {
         width: 256px;
         height: 36px;
-        background: #ffffff;
+        background: $background-color;
         mix-blend-mode: normal;
         opacity: 0.8;
         border: 1px solid #999999;
@@ -84,7 +84,7 @@
         width: 18px;
         height: 18px;
         border-radius: 4px;
-        color: #ffffff;
+        color: $background-color;
         @include tablet {
           width: 17.6px;
           height: 17.6px;
@@ -109,14 +109,14 @@
       .section8-form-input__btn-submit {
         width: 198px;
         height: 48px;
-        background: #ebcb80;
+        background: $primary-color;
         border-radius: 50px;
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.0625em;
         padding: 15px 41px 14px 42px;
         border: none;
-        color: #4b4b4b;
+        color: $text-sub-color;
         @include tablet {
           width: 140px;
           height: 40px;

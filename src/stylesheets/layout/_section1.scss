@@ -20,7 +20,7 @@
       width: 450px;
       display: flex;
       flex-direction: column;
-      color: #ffffff;
+      color: $background-color;
 
       .phone-moblie {
         display: none;
@@ -81,7 +81,7 @@
         margin-bottom: 30px;
         margin-left: 23px;
         font-size: 64px;
-        color: #ebcb80;
+        color: $primary-color;
         @include desktop {
           font-size: 50px;
           margin-left: 18px;

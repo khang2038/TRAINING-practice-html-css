@@ -2,7 +2,7 @@
 .section3-container {
   height: 620px;
   background: url("../assets/images/background-about-section.svg");
-  color: #ffffff;
+  color: $background-color;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -100,7 +100,7 @@
       .description__info {
         font-size: 18px;
         line-height: 30px;
-        color: #ebcb80;
+        color: $primary-color;
         @include tablet {
           font-size: 12px;
         }

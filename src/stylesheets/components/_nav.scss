@@ -5,7 +5,7 @@
 
   &__logo {
     margin-top: 27px;
-    color: #ebcb80;
+    color: $primary-color;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
@@ -23,7 +23,7 @@
         font-size: 18px;
         line-height: 21px;
         letter-spacing: 0.0555556em;
-        color: #ffffff;
+        color: $background-color;
       }
     }
 
@@ -41,8 +41,8 @@
         height: 36px;
         background-color: transparent;
         font-size: 18px;
-        color: #ffffff;
-        border: 2px solid #ffffff;
+        color: $background-color;
+        border: 2px solid $background-color;
         border-radius: 50px;
 
         -webkit-appearance: none;

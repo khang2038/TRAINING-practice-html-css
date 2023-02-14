@@ -46,7 +46,7 @@
       position: absolute;
       top: 40px;
       left: 75px;
-      color: #ffffff;
+      color: $background-color;
       @include desktop {
         top: 27px;
         left: 55px;
@@ -150,7 +150,7 @@
       width: 130px;
       height: 38px;
       font-size: 13px;
-      border: 2px solid #4b4b4b;
+      border: 2px solid $text-sub-color;
       border-radius: 50px;
     }
     @include tablet {
@@ -169,7 +169,7 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     .card-section__button {
-      background: #ebcb80;
+      background: $primary-color;
       border-radius: 50px;
     }
   }

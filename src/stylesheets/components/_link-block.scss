@@ -21,7 +21,7 @@
   &__header {
     font-size: 18px;
     line-height: 21px;
-    color: #ffffff;
+    color: $background-color;
     margin-left: 10px;
     @include desktop {
       font-size: 16px;
@@ -39,7 +39,7 @@
     }
   }
   &__hr {
-    border-top: 1px solid #7d7d7d;
+    border-top: 1px solid $border-color;
     width: 262px;
     margin-top: 19px;
     @include desktop {
@@ -62,7 +62,7 @@
     margin-top: 12px;
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    color: $background-color;
     list-style: none;
     margin-left: 10px;
     @include desktop {
