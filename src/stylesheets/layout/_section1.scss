@@ -31,19 +31,23 @@
           display: block;
           margin-bottom: 16px;
         }
+        margin-bottom: 27px;
       }
 
       @include desktop {
         width: 350px;
+        margin-left: 70px;
       }
 
       @include tablet-lager {
         width: 300px;
+        margin-left: 60px;
       }
 
       @include tablet {
         width: 283.64px;
         margin-top: 80px;
+        margin-left: 50px;
       }
 
       @include mobile {
@@ -168,13 +172,21 @@
     .section1-container-right {
       margin-right: 100px;
       width: 358px;
+      @include desktop {
+        margin-right: 50px;
+      }
       @include tablet-lager {
+        margin-right: 30px;
         .iphone-app {
           width: 280px;
           &__img {
             width: 280px;
           }
         }
+      }
+      @include tablet {
+        margin-right: 0px;
+        width: 290px;
       }
 
       @include tablet {
