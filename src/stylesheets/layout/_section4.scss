@@ -1,20 +1,8 @@
 @use "../abstracts" as *;
 .section4-container {
-  height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  @include tablet-lager {
-    height: 600px;
-  }
-
-  @include tablet {
-    height: 520px;
-  }
-
-  @include mobile {
-    height: 1304px;
-  }
   .section4-header {
     margin-top: 19px;
     text-align: center;
@@ -59,8 +47,19 @@
   }
   .section4-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 14px;
     margin-bottom: 50px;
+    margin-top: 38px;
+    @include desktop {
+      gap: 33px;
+    }
+    @include tablet-lager {
+      gap: 20px;
+    }
+    @include tablet {
+      gap: 18px;
+    }
     @include mobile {
       flex-direction: column;
       align-items: center;

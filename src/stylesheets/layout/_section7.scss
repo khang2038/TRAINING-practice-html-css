@@ -22,10 +22,16 @@
   }
   .section7-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 34px;
     margin: 76px 50px 64px 50px;
-    @include tablet {
+    @include tablet-lager {
       margin: 31px 29px 74px 29px;
+      gap: 10px;
+    }
+    @include tablet {
+      margin: 31px 0px 74px 0px;
+      gap: 3px;
     }
     @include mobile {
       margin: 20px 10px 48px 10px;
