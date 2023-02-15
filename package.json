@@ -2,10 +2,12 @@
   "name": "training-practice-html-css",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "https://khang2038.github.io/TRAINING-practice-html-css/",
   "scripts": {
     "dev": "parcel src/pages/index.html",
-    "build": "parcel build src/pages/index.html"
+    "build": "parcel build src/pages/index.html",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/khang2038/TRAINING-practice-html-css/issues"
   },
-  "homepage": "https://github.com/khang2038/TRAINING-practice-html-css#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "2.8.3",
     "parcel": "^2.8.3",
@@ -25,6 +26,7 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.58.0"
   }
 }
