@@ -11,16 +11,19 @@
       margin-top: 0px;
     }
     @include mobile {
-      .section1-container-right {
+      .device {
         display: none;
       }
     }
-    .section1-container-left {
+    .information {
       margin-left: 100px;
       width: 450px;
       display: flex;
       flex-direction: column;
       color: $background-color;
+      .information-main {
+        display: block;
+      }
 
       .phone-moblie {
         display: none;
@@ -169,9 +172,10 @@
         }
       }
     }
-    .section1-container-right {
+    .device {
       margin-right: 100px;
       width: 358px;
+      margin-top: 20px;
       @include desktop {
         margin-right: 50px;
       }

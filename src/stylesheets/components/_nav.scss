@@ -15,10 +15,10 @@
     @include flex($align: center, $justify: space-between);
     margin-top: 27px;
 
-    &__categories {
+    &-categories {
       @include flex($align: center, $justify: space-around);
       margin-right: 57px;
-      li {
+      &__item {
         margin-right: 39px;
         font-size: 18px;
         line-height: 21px;
@@ -35,7 +35,7 @@
         height: 22px;
       }
 
-      &--language {
+      .dropdown-language {
         text-align: center;
         width: 69px;
         height: 36px;
@@ -44,7 +44,9 @@
         color: $background-color;
         border: 2px solid $background-color;
         border-radius: 50px;
-
+        &__option {
+          background: black;
+        }
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
