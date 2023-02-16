@@ -27,14 +27,16 @@
     margin: 76px 50px 64px 50px;
     @include tablet-lager {
       margin: 31px 29px 74px 29px;
-      gap: 10px;
+      gap: 12px;
     }
     @include tablet {
       margin: 31px 0px 74px 0px;
-      gap: 3px;
+      gap: 4px;
     }
     @include mobile {
-      margin: 20px 10px 48px 10px;
+      margin: 30px auto;
+      max-width: 300px;
+      gap: 20px;
       flex-wrap: wrap;
     }
   }

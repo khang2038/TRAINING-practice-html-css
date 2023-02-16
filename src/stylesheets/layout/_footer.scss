@@ -61,9 +61,6 @@
     @include desktop {
       margin-bottom: 37px;
     }
-    @include tablet-lager {
-      margin-bottom: 33px;
-    }
     @include tablet {
       margin-bottom: 30px;
     }
@@ -76,23 +73,26 @@
 
   .copyright {
     font-size: 16px;
-    line-height: 24px;
     color: $background-color;
+    margin-top: 5px;
+    line-height: 24px;
     @include desktop {
       font-size: 14px;
-      line-height: 20px;
     }
     @include tablet-lager {
-      font-size: 13px;
       line-height: 18px;
+      font-size: 13px;
     }
     @include tablet {
       font-size: 11px;
-      line-height: 13px;
     }
 
     @include mobile {
-      margin-top: 29px;
+      margin-top: 30px;
+      line-height: 24px;
     }
+  }
+  .social {
+    margin-top: 15px;
   }
 }
