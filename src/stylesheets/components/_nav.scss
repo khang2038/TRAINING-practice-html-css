@@ -1,5 +1,8 @@
 @use "../abstracts/" as *;
 .navbar {
+  .navbar-right-categories-list {
+    display: block;
+  }
   width: 100%;
   @include flex($align: center, $justify: space-around);
 
