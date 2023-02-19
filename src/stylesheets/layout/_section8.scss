@@ -3,170 +3,172 @@
   background: url("../assets/images/background-contact.svg") no-repeat center
     center / cover;
   color: $background-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  .section8__title {
-    text-align: center;
-    font-size: 44px;
-    line-height: 40px;
-    letter-spacing: -0.0363636em;
-    margin-top: 68px;
-    @include tablet {
-      font-size: 31.2889px;
-    }
-  }
-  .section8-main {
-    width: 360px;
-    height: 396px;
-    background: $text-sub-color;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
-    margin-top: 52px;
-    @include tablet {
-      width: 290px;
-      height: 370.7px;
-    }
-    .section8-form {
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        224.09deg,
-        rgba(255, 255, 255, 0.5) 5.13%,
-        rgba(255, 255, 255, 7e-5) 90.88%
-      );
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 48px;
-      border-radius: 8px;
-      &__input {
-        width: 256px;
-        height: 36px;
-        background: $background-color;
-        mix-blend-mode: normal;
-        opacity: 0.8;
-        border: 1px solid #999999;
-        border-radius: 4px;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.01em;
-        padding: 9px 151px 9px 15px;
-        margin-bottom: 25px;
-        @include tablet {
-          width: 220px;
-          height: 35.21px;
-          font-size: 10.7556px;
-          line-height: 13px;
-          margin-bottom: 23.79px;
-        }
-      }
-      &__input-message {
-        height: 94px;
-        padding: 8px 151px 50px 15px;
-        @include tablet {
-          height: 91.94px;
-        }
-      }
-
-      &-checkbox {
-        display: flex;
-        align-items: center;
-        margin-bottom: 25px;
-        gap: 1px;
-        @include tablet {
-          font-size: 10.7556px;
-          line-height: 15px;
-        }
-      }
-
-      &__input-checkbox {
-        width: 18px;
-        height: 18px;
-        border-radius: 4px;
-        color: $background-color;
-        @include tablet {
-          width: 17.6px;
-          height: 17.6px;
-        }
-        &:hover {
-          cursor: pointer;
-        }
-      }
-      .img-checkbox {
-        display: none;
-        margin: 3px 3px 3px 4px;
-      }
-
-      .section8-form__input-checkbox:checked + .img-checkbox {
-        display: block;
-      }
-
-      .section8-form__input-checkbox:checked {
-        display: none;
-      }
-
-      .section8-form-input__btn-submit {
-        width: 198px;
-        height: 48px;
-        background: $primary-color;
-        border-radius: 50px;
-        font-size: 16px;
-        line-height: 19px;
-        letter-spacing: 0.0625em;
-        padding: 15px 41px 14px 42px;
-        border: none;
-        color: $text-sub-color;
-        @include tablet {
-          width: 140px;
-          height: 40px;
-          padding: 13px 12px 13px 13px;
-        }
-        &:hover {
-          cursor: pointer;
-          transition: all 0.7s ease-out;
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        &:active {
-          transform: translateY(-1px);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
-      }
-    }
-  }
-  .section8-contact {
-    margin-top: 39px;
-    margin-bottom: 50px;
+  .container {
     display: flex;
-    @include tablet {
-      font-size: 10.7556px;
-      line-height: 30px;
-    }
-    @include mobile {
-      flex-direction: column;
-    }
-    .contact-item {
-      display: flex;
-      margin: 0 14px;
-      &__img {
-        margin-right: 13px;
-      }
-      @include tablet-lager {
-        margin: 0 10px;
-        &__img {
-          margin-right: 8px;
-        }
-      }
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .section8__title {
+      text-align: center;
+      font-size: 44px;
+      line-height: 40px;
+      letter-spacing: -0.0363636em;
+      margin-top: 68px;
       @include tablet {
-        margin: 0 10px;
-        &__img {
-          margin-top: 6px;
-          margin-right: 10px;
+        font-size: 31.2889px;
+      }
+    }
+    .section8-main {
+      width: 360px;
+      height: 396px;
+      background: $text-sub-color;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+      margin-top: 52px;
+      @include tablet {
+        width: 290px;
+        height: 370.7px;
+      }
+      .section8-form {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          224.09deg,
+          rgba(255, 255, 255, 0.5) 5.13%,
+          rgba(255, 255, 255, 7e-5) 90.88%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 48px;
+        border-radius: 8px;
+        &__input {
+          width: 256px;
+          height: 36px;
+          background: $background-color;
+          mix-blend-mode: normal;
+          opacity: 0.8;
+          border: 1px solid #999999;
+          border-radius: 4px;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.01em;
+          padding: 9px 151px 9px 15px;
+          margin-bottom: 25px;
+          @include tablet {
+            width: 220px;
+            height: 35.21px;
+            font-size: 10.7556px;
+            line-height: 13px;
+            margin-bottom: 23.79px;
+          }
         }
-        &__img-mail {
-          margin-top: 3px;
+        &__input-message {
+          height: 94px;
+          padding: 8px 151px 50px 15px;
+          @include tablet {
+            height: 91.94px;
+          }
+        }
+
+        &-checkbox {
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px;
+          gap: 1px;
+          @include tablet {
+            font-size: 10.7556px;
+            line-height: 15px;
+          }
+        }
+
+        &__input-checkbox {
+          width: 18px;
+          height: 18px;
+          border-radius: 4px;
+          color: $background-color;
+          @include tablet {
+            width: 17.6px;
+            height: 17.6px;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .img-checkbox {
+          display: none;
+          margin: 3px 3px 3px 4px;
+        }
+
+        .section8-form__input-checkbox:checked + .img-checkbox {
+          display: block;
+        }
+
+        .section8-form__input-checkbox:checked {
+          display: none;
+        }
+
+        .section8-form-input__btn-submit {
+          width: 198px;
+          height: 48px;
+          background: $primary-color;
+          border-radius: 50px;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.0625em;
+          padding: 15px 41px 14px 42px;
+          border: none;
+          color: $text-sub-color;
+          @include tablet {
+            width: 140px;
+            height: 40px;
+            padding: 13px 12px 13px 13px;
+          }
+          &:hover {
+            cursor: pointer;
+            transition: all 0.7s ease-out;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+          &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+    .section8-contact {
+      margin-top: 39px;
+      margin-bottom: 50px;
+      display: flex;
+      @include tablet {
+        font-size: 10.7556px;
+        line-height: 30px;
+      }
+      @include mobile {
+        flex-direction: column;
+      }
+      .contact-item {
+        display: flex;
+        margin: 0 14px;
+        &__img {
+          margin-right: 13px;
+        }
+        @include tablet-lager {
+          margin: 0 10px;
+          &__img {
+            margin-right: 8px;
+          }
+        }
+        @include tablet {
+          margin: 0 10px;
+          &__img {
+            margin-top: 6px;
+            margin-right: 10px;
+          }
+          &__img-mail {
+            margin-top: 3px;
+          }
         }
       }
     }

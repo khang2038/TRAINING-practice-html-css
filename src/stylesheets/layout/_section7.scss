@@ -1,43 +1,45 @@
 @use "../abstracts" as *;
 .section7-container {
   background: #f6f6f6;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-around;
-  .section7__title {
-    text-align: center;
-    font-size: 44px;
-    line-height: 40px;
-    margin-top: 68px;
-    @include tablet-lager {
-      font-size: 44px;
-    }
-    @include tablet {
-      font-size: 32px;
-    }
-    @include mobile {
-      font-size: 20px;
-      line-height: 23px;
-    }
-  }
-  .section7-main {
+  .container {
+    flex-direction: column;
     display: flex;
-    justify-content: center;
-    gap: 34px;
-    margin: 76px 50px 64px 50px;
-    @include tablet-lager {
-      margin: 31px 29px 74px 29px;
-      gap: 20px;
+    justify-content: space-around;
+    .section7__title {
+      text-align: center;
+      font-size: 44px;
+      line-height: 40px;
+      margin-top: 68px;
+      @include tablet-lager {
+        font-size: 44px;
+      }
+      @include tablet {
+        font-size: 32px;
+      }
+      @include mobile {
+        font-size: 20px;
+        line-height: 23px;
+      }
     }
-    @include tablet {
-      margin: 31px 0px 74px 0px;
-      gap: 20px;
-    }
-    @include mobile {
-      margin: 30px auto;
-      max-width: 300px;
-      gap: 20px;
-      flex-wrap: wrap;
+    .section7-main {
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+      margin: 76px 50px 64px 50px;
+      @include tablet-lager {
+        margin: 31px 29px 74px 29px;
+        gap: 20px;
+      }
+      @include tablet {
+        margin: 31px 0px 74px 0px;
+        gap: 20px;
+      }
+      @include mobile {
+        margin: 30px auto;
+        max-width: 300px;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
     }
   }
 }

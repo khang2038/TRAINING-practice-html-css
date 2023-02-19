@@ -72,19 +72,20 @@
     &-view {
       position: absolute;
       top: 45%;
-      left: 45%;
+      left: 38%;
       display: none;
       @include tablet-lager {
         top: 45%;
-        left: 42%;
+        left: 36%;
       }
       @include tablet {
         top: 43%;
-        left: 40%;
+        left: 36%;
       }
       &__img {
         width: 40px;
         height: 22px;
+        margin-left: 10px;
         img {
           width: 40px;
           height: 22px;

@@ -1,4 +1,8 @@
 @use "../abstracts" as *;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 .section1 {
   background: url("../assets/images/background-header.png") no-repeat center
     center / cover;

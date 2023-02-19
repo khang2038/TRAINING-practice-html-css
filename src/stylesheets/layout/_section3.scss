@@ -2,126 +2,128 @@
 .section3-container {
   background: url("../assets/images/background-about-section.svg");
   color: $background-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  .section3-header {
-    margin-top: 91px;
-    text-align: center;
-    font-size: 44px;
-    line-height: 40px;
-    letter-spacing: -0.0363636em;
-    @include tablet-lager {
-      font-size: 38px;
-    }
-
-    @include tablet {
-      font-size: 32px;
-      margin-top: 41px;
-    }
-
-    @include mobile {
-      margin-top: 28px;
-      font-size: 20px;
-    }
-  }
-  .section3-main {
+  .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    margin-top: 110px;
-    @include tablet {
-      margin-top: 59px;
-    }
-
-    @include mobile {
-      margin-top: 56px;
-    }
-    &__text {
-      width: 750px;
-      font-size: 24px;
-      line-height: 36px;
-      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    .section3-header {
+      margin-top: 91px;
+      text-align: center;
+      font-size: 44px;
+      line-height: 40px;
+      letter-spacing: -0.0363636em;
       @include tablet-lager {
-        font-size: 17px;
-        width: 620px;
+        font-size: 38px;
       }
+
       @include tablet {
-        font-size: 12px;
-        line-height: 16px;
-        width: 470px;
+        font-size: 32px;
+        margin-top: 41px;
       }
 
       @include mobile {
-        font-size: 12px;
-        line-height: 16px;
-        width: 240px;
+        margin-top: 28px;
+        font-size: 20px;
       }
     }
-
-    &__image {
-      margin-top: 25px;
-      @include tablet-lager {
-        width: 50px;
-        img {
-          width: 50px;
-        }
-      }
+    .section3-main {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 110px;
       @include tablet {
-        width: 40px;
-        img {
-          width: 40px;
-        }
+        margin-top: 59px;
       }
+
       @include mobile {
-        display: none;
+        margin-top: 56px;
       }
-    }
-  }
-  .section3-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 46px;
-    margin-bottom: 73px;
-    @include tablet {
-      margin-top: 40px;
-      margin-bottom: 39px;
-    }
-
-    @include mobile {
-      margin-top: 24px;
-      margin-bottom: 36px;
-    }
-    .image {
-      @include tablet-lager {
-        width: 60px;
-        img {
-          width: 60px;
+      &__text {
+        width: 750px;
+        font-size: 24px;
+        line-height: 36px;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+        @include tablet-lager {
+          font-size: 17px;
+          width: 620px;
         }
-      }
-      @include tablet {
-        width: 48px;
-        img {
-          width: 48px;
-        }
-        margin-right: 16px;
-      }
-      margin-right: 29px;
-    }
-    .description {
-      .description__info {
-        font-size: 18px;
-        line-height: 30px;
-        color: $primary-color;
         @include tablet {
           font-size: 12px;
+          line-height: 16px;
+          width: 470px;
+        }
+
+        @include mobile {
+          font-size: 12px;
+          line-height: 16px;
+          width: 240px;
         }
       }
-      .description__info-id {
-        font-size: 16px;
-        line-height: 30px;
+
+      &__image {
+        margin-top: 25px;
+        @include tablet-lager {
+          width: 50px;
+          img {
+            width: 50px;
+          }
+        }
         @include tablet {
-          font-size: 11px;
-          line-height: 15px;
+          width: 40px;
+          img {
+            width: 40px;
+          }
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+    .section3-footer {
+      display: flex;
+      justify-content: center;
+      margin-top: 46px;
+      margin-bottom: 73px;
+      @include tablet {
+        margin-top: 40px;
+        margin-bottom: 39px;
+      }
+
+      @include mobile {
+        margin-top: 24px;
+        margin-bottom: 36px;
+      }
+      .image {
+        @include tablet-lager {
+          width: 60px;
+          img {
+            width: 60px;
+          }
+        }
+        @include tablet {
+          width: 48px;
+          img {
+            width: 48px;
+          }
+          margin-right: 16px;
+        }
+        margin-right: 29px;
+      }
+      .description {
+        .description__info {
+          font-size: 18px;
+          line-height: 30px;
+          color: $primary-color;
+          @include tablet {
+            font-size: 12px;
+          }
+        }
+        .description__info-id {
+          font-size: 16px;
+          line-height: 30px;
+          @include tablet {
+            font-size: 11px;
+            line-height: 15px;
+          }
         }
       }
     }
