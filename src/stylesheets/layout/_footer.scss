@@ -22,6 +22,12 @@
     @include mobile {
       max-width: 290px;
     }
+    @include mobile-small {
+      width: 265px;
+    }
+    @include mobile-smaller {
+      width: 245px;
+    }
   }
 
   .links {

@@ -3,6 +3,7 @@
   background: url("../assets/images/background-contact.svg") no-repeat center
     center / cover;
   color: $background-color;
+  overflow: hidden;
   .container {
     display: flex;
     flex-direction: column;
@@ -28,9 +29,17 @@
         width: 290px;
         height: 370.7px;
       }
+      @include mobile {
+        width: 275px;
+        height: 370px;
+      }
       .section8-form {
         width: 100%;
         height: 100%;
+        @include mobile {
+          width: 275px;
+          height: 370px;
+        }
         background: linear-gradient(
           224.09deg,
           rgba(255, 255, 255, 0.5) 5.13%,
@@ -119,6 +128,7 @@
           padding: 15px 41px 14px 42px;
           border: none;
           color: $text-sub-color;
+          transition: all 0.7s ease-out;
           @include tablet {
             width: 140px;
             height: 40px;

@@ -12,6 +12,12 @@
   }
 }
 
+@mixin mobile-smaller {
+  @media screen and (max-width: $minium) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (max-width: $medium) {
     @content;

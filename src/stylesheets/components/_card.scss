@@ -142,6 +142,7 @@
     height: 48px;
     background-color: #f6f6f6;
     border: none;
+    transition: all 0.7s ease-out;
     @include desktop {
       width: 170px;
       height: 40px;

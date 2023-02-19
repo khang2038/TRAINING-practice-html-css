@@ -2,6 +2,7 @@
 .section3-container {
   background: url("../assets/images/background-about-section.svg");
   color: $background-color;
+  overflow: hidden;
   .container {
     display: flex;
     flex-direction: column;
