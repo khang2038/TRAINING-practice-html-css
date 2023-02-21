@@ -7,13 +7,6 @@
   align-items: center;
   overflow: hidden;
   height: 100vh;
-  @include tablet {
-    height: 440px;
-  }
-
-  @include mobile {
-    height: 360px;
-  }
 
   &-container {
     text-align: center;

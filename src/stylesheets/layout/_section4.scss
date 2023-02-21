@@ -6,6 +6,9 @@
   overflow: hidden;
   height: 100vh;
   align-items: center;
+  @include mobile {
+    height: 150vh;
+  }
   .section4-header {
     margin-top: 19px;
     text-align: center;
