@@ -25,11 +25,11 @@
     justify-content: space-around;
     align-items: center;
     @include tablet {
+    }
+    @include mobile {
       margin-top: 0px;
       position: static;
       transform: translateX(0);
-    }
-    @include mobile {
       .device {
         display: none;
       }
