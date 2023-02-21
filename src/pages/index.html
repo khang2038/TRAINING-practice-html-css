@@ -31,23 +31,44 @@
     <script>
       HTMLInspector.inspect();
       AOS.init();
-      $.scrollify({
-        section: ".scroll",
-        sectionName: "section-name",
-        interstitialSection: "",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset: 0,
-        scrollbars: true,
-        setHeights: false,
-        overflowScroll: true,
-        updateHash: true,
-        touchScroll: true,
-        before: function () {},
-        after: function () {},
-        afterResize: function () {},
-        afterRender: function () {},
+
+      screenCheck();
+
+      $(window).on("resize", function () {
+        screenCheck();
       });
+
+      function applyScroll() {
+        $.scrollify({
+          section: ".scroll",
+          sectionName: "section-name",
+          interstitialSection: "",
+          easing: "easeOutExpo",
+          scrollSpeed: 1100,
+          offset: 0,
+          scrollbars: true,
+          setHeights: false,
+          overflowScroll: true,
+          updateHash: true,
+          touchScroll: true,
+          before: function () {},
+          after: function () {},
+          afterResize: function () {},
+          afterRender: function () {},
+        });
+      }
+
+      function screenCheck() {
+        var deviceAgent = navigator.userAgent.toLowerCase();
+        var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
+        if (agentID || $(window).width() <= 1024) {
+          $.scrollify.destroy();
+          $.scrollify.disable();
+        } else {
+          applyScroll();
+          $.scrollify.enable();
+        }
+      }
     </script>
   </body>
 </html>
