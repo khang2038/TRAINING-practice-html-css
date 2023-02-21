@@ -1,11 +1,15 @@
 @use "../abstracts" as *;
 
 .section2-container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  @include mobile {
+    height: 130vh;
+  }
   .section2-header {
     color: $text-sub-color;
     &__tittle {
@@ -13,7 +17,7 @@
       font-size: 44px;
       line-height: 48px;
       margin-bottom: 22px;
-      margin-top: 69px;
+      margin-top: 60px;
       @include tablet {
         font-size: 32px;
         margin-bottom: 0px;

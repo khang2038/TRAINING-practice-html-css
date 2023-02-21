@@ -1,12 +1,18 @@
 @use "../abstracts" as *;
+
 .section3-container {
-  background: url("../assets/images/background-about-section.svg");
+  background: url("../assets/images/background-about-section.svg") no-repeat
+    center center / cover;
   color: $background-color;
   overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
     .section3-header {
       margin-top: 91px;
       text-align: center;

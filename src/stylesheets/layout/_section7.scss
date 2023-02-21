@@ -2,6 +2,9 @@
 .section7-container {
   background: #f6f6f6;
   overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   .container {
     flex-direction: column;
     display: flex;
