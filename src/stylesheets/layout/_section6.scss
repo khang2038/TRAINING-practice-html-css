@@ -80,6 +80,9 @@
     @include mobile {
       max-width: 240px;
     }
+    .slick-list {
+      height: 467px;
+    }
   }
   .slick-arrow {
     display: none !important;

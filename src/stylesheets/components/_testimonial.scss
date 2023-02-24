@@ -86,29 +86,35 @@
       }
     }
   }
-
-  &.testimonial-section-active {
-    background: $primary-color;
+}
+.testimonial-section-active {
+  background: $primary-color;
+  color: $text-sub-color;
+  margin-bottom: 48px;
+  .testimonial-section__name {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 44px;
     color: $text-sub-color;
-    margin-bottom: 48px;
-    .testimonial-section__name {
-      font-size: 24px;
-      line-height: 28px;
-      margin-top: 44px;
+    @include tablet {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 0px;
       color: $text-sub-color;
-      @include tablet {
-        font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 0px;
-        color: $text-sub-color;
-      }
-      @include mobile {
-        font-size: 18px;
-        line-height: 21px;
-        color: $text-sub-color;
-        display: none;
-      }
     }
+    @include mobile {
+      font-size: 18px;
+      line-height: 21px;
+      color: $text-sub-color;
+      display: none;
+    }
+  }
+}
+.slick-track {
+  display: flex !important;
+  align-items: flex-end !important;
+  @include tablet {
+    display: block !important;
   }
 }
 .testimonial-section.slick-slide {
