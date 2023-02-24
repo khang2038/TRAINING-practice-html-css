@@ -9,21 +9,6 @@
   padding: 33px 64px 87px 66px;
   position: relative;
   color: #f6f6f6;
-  @include tablet-lager {
-    max-width: 400px;
-    height: 308px;
-    margin-left: 13px;
-  }
-  @include tablet {
-    max-width: 316px;
-    height: 280px;
-  }
-  @include mobile {
-    width: 240px;
-    height: 280px;
-    padding: 28px 23px 61px 27px;
-    margin-left: 0px;
-  }
   &__comma {
     text-align: center;
     font-size: 64px;
@@ -52,8 +37,8 @@
     margin-top: 44px;
     color: $primary-color;
     @include tablet-lager {
-      font-size: 21px;
-      line-height: 25px;
+      font-size: 18px;
+      line-height: 21px;
       margin-top: 31px;
     }
     @include tablet {
@@ -106,11 +91,40 @@
     background: $primary-color;
     color: $text-sub-color;
     margin-bottom: 48px;
-    @include tablet {
-      margin-bottom: 0px;
+    .testimonial-section__name {
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: 44px;
+      color: $text-sub-color;
+      @include tablet {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 0px;
+        color: $text-sub-color;
+      }
+      @include mobile {
+        font-size: 18px;
+        line-height: 21px;
+        color: $text-sub-color;
+        display: none;
+      }
     }
-    @include mobile {
-      display: none;
-    }
+  }
+}
+.testimonial-section.slick-slide {
+  @include tablet-lager {
+    max-width: 400px;
+    height: 308px;
+    margin-left: 13px;
+  }
+  @include tablet {
+    max-width: 316px;
+    height: 280px;
+  }
+  @include mobile {
+    width: 240px;
+    height: 280px;
+    padding: 28px 23px 61px 27px;
+    margin-left: 16px;
   }
 }

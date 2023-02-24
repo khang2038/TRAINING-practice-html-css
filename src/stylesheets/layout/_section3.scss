@@ -78,6 +78,9 @@
       &__image {
         position: absolute;
         margin-top: 25px;
+        &:hover {
+          cursor: pointer;
+        }
         &--next {
           right: 4%;
         }

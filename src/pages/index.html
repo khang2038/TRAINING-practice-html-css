@@ -52,6 +52,43 @@
       screenCheck();
 
       $(".carousel").slick();
+      $(".section6-main").slick({
+        arrow: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 280,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
 
       $(window).on("resize", function () {
         screenCheck();

@@ -7,6 +7,9 @@
   justify-content: space-around;
   overflow: hidden;
   height: 100vh;
+  .carousel {
+    display: flex;
+  }
   .section6__title {
     text-align: center;
     font-size: 44px;
@@ -34,8 +37,51 @@
       }
     }
   }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include tablet {
+      top: 400px;
+    }
+    .slick-active {
+      button {
+        background: url(../assets/icons/dot-active-icon.svg) no-repeat;
+      }
+    }
+    button {
+      background: url(../assets/icons/dot-icon.svg) no-repeat;
+      border: none;
+      margin: 16px;
+      width: 16px;
+      text-indent: -9999px;
+    }
+  }
+
   .section6-main {
     display: flex;
-    align-items: flex-end;
+    max-width: 1125px;
+    margin-bottom: 70px;
+    @include desktop {
+      max-width: 1125px;
+    }
+    @include tablet-lager {
+      max-width: 820px;
+    }
+    @include tablet {
+      max-width: 650px;
+      height: 320px;
+    }
+    @include mobile {
+      max-width: 240px;
+    }
+  }
+  .slick-arrow {
+    display: none !important;
   }
 }
