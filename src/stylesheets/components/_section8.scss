@@ -64,7 +64,7 @@
           font-size: 14px;
           line-height: 16px;
           letter-spacing: 0.01em;
-          padding: 9px 151px 9px 15px;
+          padding: 9px 15px 9px 15px;
           margin-bottom: 25px;
           @include tablet {
             width: 220px;
@@ -76,7 +76,9 @@
         }
         &__input-message {
           height: 94px;
-          padding: 8px 151px 50px 15px;
+          padding: 8px 15px 50px 15px;
+          resize: none;
+          overflow: hidden;
           @include tablet {
             height: 91.94px;
           }
